@@ -1,0 +1,50 @@
+.accordion-wrapper {
+  max-width: 700px;
+  margin: 0 auto;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background: #ddd;
+}
+.accordion-item {
+  border-bottom: 1px solid #ccc;
+  padding: 12px;
+  transition: all 0.3s ease;
+  background: orange;
+}
+.accordion-item .content {
+  display: none;
+}
+.accordion-item.active .content {
+  display: block;
+  padding: 6px 12px;
+  border-radius: 5px;
+  /* background: #eee; */
+  margin-top: 6px;
+}
+
+.title {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  cursor: pointer;
+  padding: 6px 12px;
+  border-radius: 5px;
+  /* background: #eee; */
+}
+.multiple {
+  background: palevioletred;
+}
+.combined {
+  background: yellowgreen;
+}
+.combined button {
+  margin: 10px auto;
+  background: teal;
+  color: white;
+  border: none;
+  padding: 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1.3rem;
+}
