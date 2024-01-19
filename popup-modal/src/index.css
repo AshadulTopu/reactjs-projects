@@ -1,0 +1,133 @@
+.container {
+  width: 80%;
+  height: 60vh;
+  margin: 0 auto;
+  background: #fff;
+}
+
+.popup-modal {
+  position: fixed;
+  top: -100%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: #fff;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  width: 400px;
+  text-align: center;
+  font-size: 1.6rem;
+  color: #000;
+  transition: all 0.3s ease;
+}
+.active {
+  top: 50%;
+  /* left: 50%; */
+  /* transform: translate(-50%, -50%); */
+}
+
+.popup-modal button {
+  margin-top: 20px;
+}
+
+.popup-modal button:hover {
+  background: #000;
+  color: #fff;
+}
+
+.popup-modal button:active {
+  background: #fff;
+  color: #000;
+}
+
+button {
+  all: unset;
+  background: #000;
+  color: #fff;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1.6rem;
+  margin-top: 20px;
+}
+
+.advance-model {
+  position: fixed;
+  background: teal;
+  z-index: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.right {
+  top: 50%;
+  right: -100%;
+  transform: translate(0%, -50%);
+}
+.right.active {
+  right: 0;
+}
+.right-center {
+  top: 50%;
+  right: -100%;
+  transform: translate(50%, -50%);
+}
+.right-center.active {
+  right: 50%;
+}
+.left {
+  top: 50%;
+  left: -100%;
+  transform: translate(0%, -50%);
+}
+.left.active {
+  left: 0%;
+}
+.left-center {
+  top: 50%;
+  left: -100%;
+  transform: translate(-50%, -50%);
+}
+.left-center.active {
+  left: 50%;
+}
+.top {
+  top: -100%;
+  left: 50%;
+  transform: translate(-50%, 0%);
+}
+.top.active {
+  top: 0%;
+}
+.top-center {
+  top: -100%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.top-center.active {
+  top: 50%;
+}
+.bottom {
+  bottom: -100%;
+  left: 50%;
+  transform: translate(-50%, 0%);
+}
+.bottom.active {
+  bottom: 0%;
+}
+.bottom-center {
+  bottom: -100%;
+  left: 50%;
+  transform: translate(-50%, 0%);
+}
+.bottom-center.active {
+  bottom: 50%;
+}
+.close-advance-model {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  cursor: pointer;
+  font-size: 2rem;
+}
